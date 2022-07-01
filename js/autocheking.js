@@ -100,20 +100,116 @@
 
 // 4
 
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const child = Object.create(parent);
+
+// // Change code above this line
+// child.name = "Jason";
+// child.age = 27;
 
 
+// 5
+
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent)
+// child.name = "Jason";
+// child.age = 27;
+
+// // Change code above this line
+
+// 6
+
+// class Car {
+    
+// }
+
+// 7
+
+// class Car {
+//   constructor(brand, model, price){
+// this.brand = brand;
+// this.model = model;
+// this.price = price;
+// }
+// }
+// console.log(new Car("Audi", "Q3", 36000));
+// 8
+// class Car {
+//   constructor({brand, model, price}) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+
+// }
+
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }))
 
 
+// 9
+
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   getPrice(){
+//     return this.price;
+//   }
+//   changePrice(newPrice){
+//     this.price = newPrice;
+//   }
+// }
 
 
+// 10
 
 
+class Storage {
+    constructor(items){
+        this.items = items;
+    };
+    getItems() {
+        return this.items = this.items;
+    }
+        addItem(newItem) {
+       
+return this.items.push(newItem)
+    
+    }
+removeItem(item) {
+    this.items.splice(this.items.indexOf(item), 1);
+  }
 
+}
 
-
-
-
-
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
 
 
