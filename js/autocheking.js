@@ -382,8 +382,8 @@ class Car {
   }
 
   set price(newPrice) {
-    if (newPrice <= this.MAX_PRICE){
-    this.#price = newPrice;}
+    if (newPrice <= Car.MAX_PRICE){
+    return this.#price = newPrice;}
   }
   
 }
