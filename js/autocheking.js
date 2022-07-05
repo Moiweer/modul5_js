@@ -368,34 +368,96 @@
 
 // 16
 
-class Car {
- static  MAX_PRICE =  50000;
+// class Car {
+//  static  MAX_PRICE =  50000;
 
-  #price;
+//   #price;
 
-  constructor({ price }) {
-    this.#price = price;
-  }
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
 
-  get price() {
-    return this.#price;
-  }
+//   get price() {
+//     return this.#price;
+//   }
 
-  set price(newPrice) {
-    if (newPrice <= Car.MAX_PRICE){
-    return this.#price = newPrice;}
-  }
+//   set price(newPrice) {
+//     if (newPrice <= Car.MAX_PRICE){
+//     return this.#price = newPrice;}
+//   }
   
-}
+// }
 
-const audi = new Car({ price: 35000 });
-console.log(audi.price); // 35000
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
 
-audi.price = 49000;
-console.log(audi.price); // 49000
+// audi.price = 49000;
+// console.log(audi.price); // 49000
 
-audi.price = 51000;
-console.log(audi.price); // 49000
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+
+
+
+// 17
+
+// class Car {
+//   static #MAX_PRICE = 50000;
+//  static checkPrice(price){
+//    if (price > Car.#MAX_PRICE){
+//      return `Error! Price exceeds the maximum`;
+//    };
+//     return `Success! Price is within acceptable limits`
+     
+//  }
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+// 18
+
+
+// console.log(document);
+
+// const body = document.body;
+// console.log(body);
+
+// const list = body.firstElementChild;
+// console.log(list);
+
+// const firstListItem = list.firstElementChild;
+// console.log(firstListItem);
+
+// const listItems = list.children;
+// console.log(listItems);
+
+
+const listWithId = document.querySelector('#menu');
+listWithId.style.textTransform = 'uppercase';
+listWithId.style.fontSize = '24px';
+console.log(listWithId);
+
+const listWithClass = document.querySelector('.menu');
+console.log(listWithClass);
+
+const menuItemsByTagName = document.querySelectorAll("li");
+console.log(menuItemsByTagName);
+
+const menuItemsByClass = document.querySelectorAll(".menu-item");
+console.log(menuItemsByClass);
+
+const firstMenuItem = document.querySelector(".menu-item");
+firstMenuItem.style.color = 'tomato';
+console.log(firstMenuItem);
+
 
 // Перебираючі методи масиву
 
