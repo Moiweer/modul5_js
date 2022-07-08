@@ -1,40 +1,40 @@
 1.
 
 
-const pizzaPalace = {
-  pizzas: ["Supercheese", "Smoked", "Four meats"],
-  // Change code below this line
-  checkPizza(pizzaName) {
-    return this.pizzas.includes(pizzaName);
-  },
-  order(pizzaName) {
-    const isPizzaAvailable = this.checkPizza(pizzaName);
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
 
-    if (!isPizzaAvailable) {
-      return `Sorry, there is no pizza named «${pizzaName}»`;
-    }
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
 
-    return `Order accepted, preparing «${pizzaName}» pizza`;
-  },
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
 
-};
+// };
 
-Метод `order()` використовує оператор `this`
+// Метод `order()` використовує оператор `this`
 
-right answer
-Метод `checkPizza()` використовує оператор `this`
+// right answer
+// Метод `checkPizza()` використовує оператор `this`
 
-right answer
-Виклик `pizzaPalace.order('Smoked')` повертає рядок 'Order accepted, preparing «Smoked» pizza'
+// right answer
+// Виклик `pizzaPalace.order('Smoked')` повертає рядок 'Order accepted, preparing «Smoked» pizza'
 
-right answer
-Виклик `pizzaPalace.order('Four meats')` повертає рядок 'Order accepted, preparing «Four meats» pizza'
+// right answer
+// Виклик `pizzaPalace.order('Four meats')` повертає рядок 'Order accepted, preparing «Four meats» pizza'
 
-right answer
-Виклик `pizzaPalace.order('Big Mike')` повертає рядок 'Sorry, there is no pizza named «Big Mike»'
+// right answer
+// Виклик `pizzaPalace.order('Big Mike')` повертає рядок 'Sorry, there is no pizza named «Big Mike»'
 
-right answer
-Виклик `pizzaPalace.order('Viennese')` повертає рядок 'Sorry, there is no pizza named «Viennese»'
+// right answer
+// Виклик `pizzaPalace.order('Viennese')` повертає рядок 'Sorry, there is no pizza named «Viennese»'
 
 
 // 2
@@ -1815,3 +1815,13 @@ right answer
 // const uniqueCourses = allCourses.filter(
 //     (course, index, array) => array.indexOf(course) === index
 // );
+
+
+
+// const button = document.querySelector(".my-button");
+
+// const handleClick = () => {
+//   console.log("Button was clicked");
+// };
+
+// button.addEventListener("click", handleClick);
