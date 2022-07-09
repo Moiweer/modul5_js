@@ -1825,3 +1825,91 @@
 // };
 
 // button.addEventListener("click", handleClick);
+
+
+
+// MODUL 6 КОНСПЕКТ =======================================================================================
+
+
+// Функція для створення li (в кількості count  штук)
+
+// const list = document.querySelector(".list")
+
+// const createLi = (count) => {
+//   for (let i = 1; i <= count; i += 1){
+//     const li = document.createElement("li")
+//     li.textContent = `${i}`
+//     list.append(li)
+//   }
+
+// }
+// createLi(10);
+
+// ===================================================================================
+
+// Видалення елементів створених в JS
+
+// const list = document.querySelector(".list")
+
+// const createLi = (count) => {
+//   for (let i = 0; i <= count; i += 1){
+//     const li = document.createElement("li")
+//     li.textContent = `${i}`
+//     list.append(li)
+//   }
+
+// }
+// createLi(10);
+// Перший варіант
+// console.log(...list.children)// зробить масив з списку// [li, li, li, li, li, li, li, li, li, li]
+// // list.innerHTML = ""; //  видаліть всі лішки, але при тому залишиться ul (буде пустим)
+
+// const filteredLi = [...list.children].filter(
+//   li, index => index !== 1 || index !== 4 || index !== 7);//буде новий масив - відфільтровуєму 
+//                                                         //  елементи нашого списку -
+//                                                         //    всі крім 1, 4, 7
+                                                 
+// list.innerHTML = "";// видаляємо з старого масиву все
+// list.append(...filteredLi)
+
+// Другий варіант видалення елементу
+
+// const children = document.querySelectorAll("li");
+// children.forEach((el, i) => {
+//   if (i === 2 || i === 5 || i === 7) {
+//     el.remove();
+//   }
+// })
+// console.log(children);// видалиться 2, 5, 7 (li елементи)
+
+
+// ===================================================================================
+  // Навігація знаходження ближнього вищого за ієрархією елемента
+  // наприклад за класом (.modal) Метод closest буде шукати найближчий батьківській
+  // елемент (не сусідній!)
+
+// const button = document.querySelector("button")
+// console.log(button.closest(".modal"))
+// якщо задати в пошук неіснуючого елементу, то видасть null
+
+
+// Вставка 1 елемента  на сторінку ====================================
+
+// const overlay = document.querySelector(".overlay");// достукалиь до селектору оверлей
+// const title = document.createElement("h1")// створили h1
+// title.textContent = "Hello World"// додаємо контент в h1
+// overlay.append(title);// додаємо елемент h1 на сторінку
+
+
+// Вставка 2 елемента декілька разів на сторінку ===================================
+
+// const overlay = document.querySelector(".overlay");// достукалиь до селектору оверлей
+// const title = document.createElement("h1")// створили h1
+// const modal = document.querySelector(".modal") //достукались до классу modal
+// title.textContent = "Hello World"// додаємо контент в h1
+// const titleCopy = title.cloneNode(true);
+// overlay.append(title);// додаємо елемент h1 на сторінку
+// modal.append(titleCopy); // додаємо другий елемент
+
+// В обох прикладах створиться h1 в коді в консолі ( в самому документі ні)
+
